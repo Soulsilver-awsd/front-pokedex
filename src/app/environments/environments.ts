@@ -1,4 +1,6 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:8080/api' // Tu dominio base de Quarkus
+  apiUrl: "https://pokeapi.co/api/v2",
+  imagesUrl: "https://raw.githubusercontent.com"
+  ///PokeAPI/sprites/master/sprites/pokemon/{id}
 };
