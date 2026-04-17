@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import {
     TranslateService
 } from "@ngx-translate/core";
+import { environment } from './app/environments/environments';
 
 @Component({
     selector: 'app-root',
@@ -11,11 +12,9 @@ import {
     template: `<router-outlet></router-outlet>`
 })
 export class AppComponent {
-    private translateService = inject(TranslateService);
+    private readonly translateService = inject(TranslateService);
 
     constructor() {
-        this.translateService.addLangs(['es', 'en']);
-        this.translateService.setFallbackLang('en');
-        this.translateService.use('es');
+        this.translateService.addLangs(environment.I18N.AVAILABLE_LANGS);
     }
 }

@@ -7,6 +7,7 @@ import { providePrimeNG } from 'primeng/config';
 import { appRoutes } from './app.routes';
 import { provideTranslateService } from '@ngx-translate/core'
 import { provideTranslateHttpLoader } from "@ngx-translate/http-loader";
+import { environment } from './app/environments/environments';
 
 export const appConfig: ApplicationConfig = {
     providers: [
@@ -17,11 +18,11 @@ export const appConfig: ApplicationConfig = {
         provideZoneChangeDetection({ eventCoalescing: true }),
         provideTranslateService({
             loader: provideTranslateHttpLoader({
-                prefix: '/assets/i18n/',
+                prefix: environment.I18N.PREFIX_PATH,
                 suffix: '.json'
             }),
-            fallbackLang: 'en',
-            lang: 'en'
+            fallbackLang: environment.I18N.FALLBACK_LANG,
+            lang: environment.I18N.DEFAULT_LANG
 
         })
     ]
