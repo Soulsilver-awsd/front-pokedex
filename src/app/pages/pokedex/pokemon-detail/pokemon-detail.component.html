@@ -1,1 +1,66 @@
-<p>pokemon-detail works!</p>
+<div class="flex flex-column h-full w-full surface-card border-round shadow-2 overflow-hidden">
+    <div class="flex-none surface-section border-round-top p-3 border-bottom-1 surface-border flex align-items-center gap-3">
+        <span class="font-bold text-primary font-mono">#218</span>
+        <div class="flex flex-column">
+            <span class="font-bold text-color text-xl line-height-1">Ursaluna</span>
+            <span class="text-color-secondary text-xs italic">Peat Pokémon</span>
+        </div>
+        <div class="ml-auto flex gap-2">
+            <span class="p-tag p-tag-rounded bg-primary px-3 shadow-1">Ground</span>
+            <span class="p-tag p-tag-rounded surface-200 text-700 px-3 shadow-1">Normal</span>
+        </div>
+    </div>
+
+    <div class="flex flex-column md:flex-row flex-grow-1 overflow-y-auto md:overflow-hidden bg-black-alpha-10">
+        <div class="w-full md:w-5 flex-none p-4 flex flex-column align-items-center justify-content-center">
+            <div class="w-full max-w-20rem h-12rem md:h-20rem border-round-xl surface-card border-2 border-dashed border-primary shadow-4 flex align-items-center justify-content-center relative">
+                <div class="absolute top-0 left-0 w-full h-full bg-white-alpha-10 pointer-events-none"></div>
+                <i class="pi pi-image text-6xl text-primary-200"></i>
+            </div>
+            <div class="mt-3 py-1 px-3 bg-primary border-round-pill text-xs font-bold uppercase shadow-2">Front Render</div>
+        </div>
+
+        <div class="w-full md:w-7 p-3 flex flex-column gap-3 md:overflow-y-auto">
+            <div class="surface-card border-round-xl shadow-2 overflow-hidden border-1 surface-border">
+                <div class="bg-primary p-2 px-3 text-xs font-bold uppercase flex align-items-center justify-content-between">
+                    <span><i class="pi pi-info-circle mr-2"></i>Physical Stats</span>
+                    <i class="pi pi-chevron-down text-xs"></i>
+                </div>
+                <div class="p-3 flex flex-column gap-3">
+                    <div class="flex justify-content-between align-items-center border-bottom-1 surface-border pb-2">
+                        <span class="text-color-secondary text-xs uppercase font-semibold">Height</span>
+                        <span class="text-color font-bold">2.4 m</span>
+                    </div>
+                    <div class="flex justify-content-between align-items-center">
+                        <span class="text-color-secondary text-xs uppercase font-semibold">Weight</span>
+                        <span class="text-color font-bold">290.0 kg</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="surface-card border-round-xl shadow-2 overflow-hidden border-1 surface-border">
+                <div class="bg-primary-dark p-2 px-3 text-xs font-bold uppercase border-bottom-1 surface-border"><i class="pi pi-heart-fill mr-2"></i>Preferred Foods</div>
+                <div class="p-3 flex gap-4 justify-content-center bg-primary-reverse-alpha-10">
+                    <div class="flex flex-column align-items-center gap-1">
+                        <i class="pi pi-apple text-3xl text-red-500"></i>
+                        <span class="text-xs font-bold">Berries</span>
+                    </div>
+                    <div class="flex flex-column align-items-center gap-1">
+                        <i class="pi pi-cloud text-3xl text-blue-400"></i>
+                        <span class="text-xs font-bold">Honey</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-none p-3 surface-section border-top-1 surface-border flex align-items-start gap-3">
+        <div class="bg-primary border-round p-2 flex align-items-center justify-content-center">
+            <i class="pi pi-book text-xl"></i>
+        </div>
+        <div class="flex flex-column gap-1">
+            <span class="text-xs font-bold text-primary uppercase">Pokédex Entry</span>
+            <p class="m-0 text-sm text-color line-height-3 italic">Habita en pantanos y destaca por su increíble fuerza física. Se dice que su armadura de barro es tan dura como el acero.</p>
+        </div>
+    </div>
+</div>
