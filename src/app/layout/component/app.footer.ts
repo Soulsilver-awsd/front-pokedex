@@ -6,7 +6,7 @@ import { TranslateDirective } from '@ngx-translate/core';
     selector: 'app-footer',
     imports: [TranslateDirective],
     template: `<div class="layout-footer translate">
-       <span translate>footer.app-name</span>
+       <span translate>footer.description</span>
         </div>`
 })
 export class AppFooter { }
