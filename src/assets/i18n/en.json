@@ -1,5 +1,40 @@
 {
+  "common": {
+    "appName": "Pokedex",
+    "actions": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "search": "Search"
+    }
+  },
+  "header": {
+    "title": "Pokedex"
+  },
   "footer": {
-    "app-name": "Pokedex"
+    "description": "Your pocket pokedex"
+  },
+  "menu": {
+    "title": "Menu",
+    "items": {
+      "pokedex": "Pokedex",
+      "about": "About"
+    }
+    
+  },
+  "pokedex":{
+    "labels":{
+      "height": "Height",
+      "weight": "Weight",
+      "weaknesses": "Weaknesses"
+    },
+    "stats": {
+      "hp": "HP",
+      "attack": "Attack",
+      "defense": "Defense",
+      "specialAttack": "Sp. Attack",
+      "specialDefense": "Sp. Defense",
+      "speed": "Speed"
+    }
   }
+
 }
